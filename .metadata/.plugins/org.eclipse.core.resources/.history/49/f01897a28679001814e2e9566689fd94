@@ -1,0 +1,38 @@
+package task_1;
+
+import java.util.Scanner;
+
+public class Main {
+
+	public static void main(String[] args) {
+
+		Scanner sc = new Scanner(System.in);
+		String input = sc.nextLine();
+		char temperatureType = input.charAt(input.length() - 1);
+		int degrees = Integer.parseInt(input.substring(0, input.length() - 1));
+		String output = "";
+		if(temperatureType == 'C')
+			output = itIsCelsius(degrees);
+		else if(temperatureType == 'K')
+			output = itIsKelvin(degrees);
+		else 
+			output = itIsFahrenheit(degrees);
+		
+		System.out.println(output);
+		
+	}
+
+	private static String itIsCelsius(int degrees) {
+		return result;
+	};
+	
+	private static String itIsKelvin(int degrees) {
+		return result;
+	};
+	
+	private static String itIsFahrenheit(int degrees) {
+		return result;
+	};
+	
+	
+}

@@ -1,0 +1,36 @@
+package task_4;
+
+import java.util.Arrays;
+
+public class Main {
+
+	public static void main(String[] args) {
+
+		int route[] = roll();
+		System.out.println("Input:\n" + Arrays.toString(route));
+		
+		int coins[] = new int[10];
+		for(int i = 0; i < coins.length; i++) coins[i] = i + 1;
+		
+		int output[] = new int[10];
+		for(int i = 0; i < output.length; i++) {
+			
+		}
+		
+
+	}
+	
+	//initialize array of random (1-10) integers with sum > 55
+	private static int[] roll() {
+		int sum = 0;
+		int arr[] = new int[10];
+		for(int i = 0; i < arr.length; i++) {
+			int num = (int) Math.rint(Math.random() * 10);
+			sum += num;
+			arr[i] = num;
+		}
+		if(sum <= 55) return roll();
+		return arr;
+	}
+
+}

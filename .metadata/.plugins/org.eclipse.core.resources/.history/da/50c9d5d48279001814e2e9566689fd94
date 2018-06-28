@@ -1,0 +1,24 @@
+package task_1;
+
+import java.util.Scanner;
+
+public class Main {
+
+	public static void main(String[] args) {
+
+		Scanner sc = new Scanner(System.in);
+		String input = sc.nextLine();
+		char temperatureType = input.charAt(input.length() - 1);
+		int degrees = Integer.parseInt(input.substring(0, input.length() - 1));
+		
+		if(temperatureType == 'C')
+			itIsCelsius();
+		else if(temperatureType == 'K')
+			itIsKelvin();
+		else 
+			itIsFahrenheit();
+				
+		
+	}
+
+}
